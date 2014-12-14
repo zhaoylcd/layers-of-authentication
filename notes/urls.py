@@ -14,7 +14,11 @@ urlpatterns=patterns('',
 		(r'^create/$',
 		 'notes.views.create_note'
 		 ),
+		(r'^ajax_create/$','notes.views.ajax_create_note'
+		 ),
 		(r'^note/(?P<slug>[-\w]+)/update/$',
 		 'notes.views.update_note'
+		 ),
+		(r'^note/(?P<slug>[-\w]+)/ajax_update/$','notes.views.ajax_update_note'
 		 ),
 		)
