@@ -103,6 +103,8 @@ MIDDLEWARE_CLASSES = (
     # 'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
+LOGIN_REDIRECT_URL=u"/"
+
 ROOT_URLCONF = 'ajax_tut.urls'
 
 # Python dotted path to the WSGI application used by Django's runserver.
